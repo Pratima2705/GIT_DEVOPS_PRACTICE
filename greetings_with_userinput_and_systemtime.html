@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h5>printing of greetings along with the images according to time</h5>
+    <p id="p1"></p>
+    <img id="img1" src="peacock.jpg" width="200" height="200" border="2"/>
+    <script>
+        var paraObj=document.getElementById("p1");
+        var imgObj=document.getElementById("img1");
+        var d=new Date();
+        var h=d.getHours();
+        if (h>0 && h<12){
+            paraObj.innerText="Good mrng";
+            imgObj.src="tea.webp";
+        }
+        if (h>=12 && h<17){
+            paraObj.innerText="Good aft";
+            imgObj.src="microphones.jpg";
+        }
+        if (h>=17 && h<19){
+            paraObj.innerText="Good evening";
+            imgObj.src="peacock.jpg";
+        }
+        if (h>=19 && h<24){
+            paraObj.innerText="Good nytt";
+            imgObj.src="winterimage.jpg";
+        }
+    </script>
+</body>
+</html>

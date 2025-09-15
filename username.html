@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    username:<input id="t1" type="text"/>
+    <br><br>
+    <input type="button" onclick="getMessage()" value="Get Message"/>
+    <p id="p1"></p>
+    <script>
+        function getMessage()
+        {
+        var paraObj=document.getElementById("p1");
+        var textObj=document.getElementById("t1");
+        var uname=textObj.value;
+        paraObj.innerText="Hi "+ uname + "!";
+        }
+    </script>
+</body>
+</html>
